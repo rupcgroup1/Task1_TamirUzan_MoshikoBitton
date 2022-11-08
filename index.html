@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="Kitchen.js"></script>
+    <link href="PopUp.css" rel="stylesheet" />
+    <link href="onFormButton.css" rel="stylesheet"/>
+</head>
+<body>
+     <!--Trying new buttons-->
+     <div class="wrapper">
+        <a class="button" onclick="addIngredient()" href="#">New Ingredient!</a>
+        <a class="button" onclick="addRecipe()" href="#">New Recipe!</a>
+    </div>
+
+    <!--****Recipes form****-->
+    <div class="container" id="recipe">
+        <form action="" id="submitRecFRM">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="recipeName">Recipe Name</label>
+                    </br>
+                    <input minlength="2" type="text" id="recipeName" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="recipeMethod">Recipe cooking method</label>
+                    </br>
+                    <input type="text" minlength="5" id="recipeMethod" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="recipeTime">Recipe cooking time</label>
+                    </br>
+                    <input type="number" min="1" id="recipeTime" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="recipeImage">Recipe image URL</label>
+                    </br>
+                    <input type="text" minlength="20" id="recipeImage" required />
+                </div>
+            </div>
+            </br>
+            <div id="createNclose">
+                <button class="glow-on-hover" type="submit" id="createRecipe">Create Recipe</button>
+                <button class="glow-on-hover" type="button" onclick="closeBTN()" id="close">Close</button>
+            </div>
+        </form>
+        <h3 id="head">Choose Ingredients</h3>
+        <div class="allIngredients">
+
+        </div>
+    </div>
+
+    <!--****Ingredients form****-->
+    <div class="container" id="ingredient">
+        <form action="" id="submitIngFRM">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="ingredientName">Ingredient Name</label>
+                    </br>
+                    <input minlength="2" type="text" id="ingredientName" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="ingredientImage">Ingredient Image (URL)</label>
+                    </br>
+                    <input type="text" minlength="20" id="ingredientImage" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="ingredientCalories">Ingredient calories</label>
+                    </br>
+                    <input type="number" min="1" id="ingredientCalories" required />
+                </div>
+            </div>
+            </br>
+            <div id="createNclose">
+                <button class="glow-on-hover" type="submit" id="createIngredient">Create Ingredient</button>
+                <button class="glow-on-hover" type="button" onclick="closeBTN()" id="close">Close</button>
+            </div>
+        </form>
+    </div>
+    </br>
+    <div id="main">
+
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="allIngredients">Im the 2nd</div>
+        </div>
+    </div>
+</body>
+</html>

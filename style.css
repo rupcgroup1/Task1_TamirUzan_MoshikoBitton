@@ -1,0 +1,213 @@
+﻿body {
+    text-align: center;
+}
+
+.special {
+    cursor: pointer;
+    font-size: 18px;
+    width: 150px;
+    height: 150px;
+    background: salmon;
+    border: none;
+    padding: 50px 10px;
+    border-radius: 50%;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.row {
+    padding-top: 100px;
+}
+
+.row {
+    padding-top: 10px;
+}
+
+.onlyButtons {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+div {
+    display: block;
+}
+@media (min-width: 200px) and (max-width: 1025px){
+    #main {
+        padding-top: 50px;
+        display: grid;
+        -ms-grid-columns: 250px;
+        grid-template-columns: 250px 250px 250px;
+        gap: 10px;
+        text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1025px){
+    #main {
+        padding-top: 100px;
+        display: grid;
+        -ms-grid-columns: 250px 250px 250px;
+        grid-template-columns: 250px 250px 250px;
+        gap: 15px;
+        text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+
+
+input:invalid {
+    border: 2px dashed red;
+}
+
+.alt {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+input:invalid:focus {
+    background-image: linear-gradient(pink, lightgreen);
+}
+@media (min-width: 200px) and (max-width: 1025px){
+    .allIngredients {
+        display: grid;
+        -ms-grid-columns: 200px 200px;
+        grid-template-columns: 200px 200px ;
+        gap: 5px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1025px){
+    .allIngredients {
+        display: grid;
+        -ms-grid-columns: 150px 150px;
+        grid-template-columns: 150px 150px ;
+        gap: 5px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+.allIngredients div {
+   border: 1px solid;
+   border-radius: 1%;
+   padding: 20px;
+   /*display: flex;*/
+   flex-direction: row;
+}
+.allIngredients img{
+    width:50px;
+    height:40px;
+}
+
+img {
+    width: 50px;
+    height: 40px;
+}
+
+#main div {
+    border: 1px solid;
+    border-radius: 1%;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 79px 0px rgb(0 0 0 / 75%);
+    box-shadow: 0px 0px 79px 0px rgb(0 0 0 / 75%);
+}
+
+/*Trying*/
+:root {
+    --bg: #1a1e24;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+}
+
+    .button:before,
+    .button:after {
+        width: 4.4em;
+        height: 2.95em;
+        position: absolute;
+        content: "";
+        display: inline-block;
+        background: var(--color);
+        border-radius: 50%;
+        transition: transform 1s ease;
+        transform: scale(0);
+        z-index: -1;
+    }
+
+    .button:before {
+        top: -25%;
+        left: 20%;
+    }
+
+    .button:after {
+        bottom: -25%;
+        right: 20%;
+    }
+
+    .button:hover:before,
+    .button:hover:after {
+        transform: none;
+    }
+#createNclose{
+    width:30%;
+    height:30%;
+    margin:0 auto;
+}
+
+
+
